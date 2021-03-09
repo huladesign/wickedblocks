@@ -1,6 +1,7 @@
 <!-- component -->
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -14,6 +15,7 @@
     <!-- Uncomment for cdn tailwind (if you haven't built your tailwind.css yet) <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">-->
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
   </head>
+
   <body class="antialiased transition-colors duration-1000 bg-white dark:bg-dark-1">
     <!----- Snackbar -->
     <div x-data="noticesHandler()" class="fixed inset-0 flex flex-col-reverse items-end justify-start w-screen h-screen"
@@ -50,7 +52,7 @@
         </div>
         <span class="justify-center hidden mt-4 sm:ml-auto md:inline-flex sm:mt-0 sm:justify-center">
 
-          
+
 
           <a href="https://twitter.com/Mike_Andreuzza"
             class="mx-3 tracking-tighter uppercase transition duration-500 ease-in-out transform text-dark-1 dark:text-gray-300 hover:text-blueGray-300 ">
@@ -128,13 +130,16 @@
     <section class="px-5 ">
       <div class="container mx-auto lg:py-16 rounded-xl">
         <div class="shadow-smallest rounded-xl" x-data="{ tab: 'preview2' }">
-          <div class="flex w-full p-4 bg-white border border-blueGray-200 dark:border-blueGray-800 text-blueGray-500 dark:bg-blueGray-800 rounded-t-xl">
-            <button :class="{ 'active font-bold dark:bg-blueGray-600 bg-blueGray-200 text-blueGray-500 dark:text-blueGray-300': tab === 'preview2' }"
+          <div
+            class="flex w-full p-4 bg-white border border-blueGray-200 dark:border-blueGray-800 text-blueGray-500 dark:bg-blueGray-800 rounded-t-xl">
+            <button
+              :class="{ 'active font-bold dark:bg-blueGray-600 bg-blueGray-200 text-blueGray-500 dark:text-blueGray-300': tab === 'preview2' }"
               class="inline-flex items-center justify-center w-full px-4 py-1 my-2 mt-2 mr-2 text-center transition duration-500 ease-in-out transform rounded-lg cursor-pointer font-lg focus:outline-none lg:w-auto active focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2 text-blueGray-500"
               @click="tab = 'preview2'">
               Preview
             </button>
-            <button :class="{ 'active font-bold dark:bg-blueGray-600 bg-blueGray-200 text-blueGray-500 dark:text-blueGray-300': tab === 'code2' }"
+            <button
+              :class="{ 'active font-bold dark:bg-blueGray-600 bg-blueGray-200 text-blueGray-500 dark:text-blueGray-300': tab === 'code2' }"
               class="inline-flex items-center justify-center w-full px-4 py-1 my-2 mt-2 mr-2 text-center transition duration-500 ease-in-out transform border border-transparent rounded-lg cursor-pointer text-blueGray-500 font-lg focus:outline-none lg:w-auto focus:shadow-outline focus:ring-2 hover:border-blueGray-300 dark:hover:border-blueGray-800 ring-offset-current ring-offset-2"
               @click="tab = 'code2'">
               Code
@@ -153,13 +158,14 @@
               </svg>
             </button>
           </div>
-           <div class="lg:h-screen">
-            <div class="border border-t-0 border-blueGray-200 rounded-b-xl dark:border-blueGray-800" x-show="tab === 'preview2'">
+          <div class="lg:h-screen">
+            <div class="border border-t-0 border-blueGray-200 rounded-b-xl dark:border-blueGray-800"
+              x-show="tab === 'preview2'">
               <iframe class="w-full h-screen rounded-b-xl" src="./tailwindBrightSections/headers-right/header-2.html"
                 title="wicked"></iframe>
             </div>
             <div class=" rounded-b-xl" x-show="tab === 'code2'">
-               <div
+              <div
                 class="h-screen overflow-auto overflow-y-scroll bg-blueGray-900 text-blueGray-200 rounded-b-xl code-tab">
                 <div class="rounded-b-xl">
                   <div class="hidden" id="headerTwo">
@@ -273,8 +279,8 @@
                   class="flex items-center px-8 py-2 mt-2 text-sm font-bold text-gray-900 transition duration-500 ease-in-out transform rounded-lg bg-gradient-to-tr from-cyan-400 to-lightBlue-500 hover:from-white hover:to-white md:mt-0 hover:text-black focus:text-gray-900 hover:bg-gray-1 focus:bg-gray-1 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2">
                   Have a look to Wicked Templates
                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    class="w-4 h-4 ml-8" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                    stroke-linecap="round" stroke-linejoin="round">
+                    class="w-4 h-4 ml-8" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                    fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                     <line x1="5" y1="12" x2="19" y2="12"></line>
                     <line x1="13" y1="18" x2="19" y2="12"></line>
@@ -300,14 +306,17 @@
     <section class="px-5 ">
       <div class="container mx-auto lg:py-16 rounded-xl">
         <div class="shadow-smallest rounded-xl" x-data="{ tab: 'preview3' }">
-          <div class="flex w-full p-4 bg-white border border-blueGray-200 dark:border-blueGray-800 text-blueGray-500 dark:bg-blueGray-800 rounded-t-xl">
+          <div
+            class="flex w-full p-4 bg-white border border-blueGray-200 dark:border-blueGray-800 text-blueGray-500 dark:bg-blueGray-800 rounded-t-xl">
 
-            <button :class="{ 'active font-bold dark:bg-blueGray-600 bg-blueGray-200 text-blueGray-500 dark:text-blueGray-300': tab === 'preview3' }"
+            <button
+              :class="{ 'active font-bold dark:bg-blueGray-600 bg-blueGray-200 text-blueGray-500 dark:text-blueGray-300': tab === 'preview3' }"
               class="inline-flex items-center justify-center w-full px-4 py-1 my-2 mt-2 mr-2 text-center transition duration-500 ease-in-out transform rounded-lg cursor-pointer font-lg focus:outline-none lg:w-auto active focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2 text-blueGray-500"
               @click="tab = 'preview3'">
               Preview
             </button>
-            <button :class="{ 'active font-bold dark:bg-blueGray-600 bg-blueGray-200 text-blueGray-500 dark:text-blueGray-300': tab === 'code3' }"
+            <button
+              :class="{ 'active font-bold dark:bg-blueGray-600 bg-blueGray-200 text-blueGray-500 dark:text-blueGray-300': tab === 'code3' }"
               class="inline-flex items-center justify-center w-full px-4 py-1 my-2 mt-2 mr-2 text-center transition duration-500 ease-in-out transform border border-transparent rounded-lg cursor-pointer text-blueGray-500 font-lg focus:outline-none lg:w-auto focus:shadow-outline focus:ring-2 hover:border-blueGray-300 dark:hover:border-blueGray-800 ring-offset-current ring-offset-2"
               @click="tab = 'code3'">
               Code
@@ -326,13 +335,14 @@
               </svg>
             </button>
           </div>
-           <div class="lg:h-screen">
-            <div class="border border-t-0 border-blueGray-200 rounded-b-xl dark:border-blueGray-800" x-show="tab === 'preview3'">
+          <div class="lg:h-screen">
+            <div class="border border-t-0 border-blueGray-200 rounded-b-xl dark:border-blueGray-800"
+              x-show="tab === 'preview3'">
               <iframe class="w-full h-screen rounded-b-xl" src="./tailwindBrightSections/headers-right/header-3.html"
                 title="wicked"></iframe>
             </div>
             <div class=" rounded-b-xl" x-show="tab === 'code3'">
-               <div
+              <div
                 class="h-screen overflow-auto overflow-y-scroll bg-blueGray-900 text-blueGray-200 rounded-b-xl code-tab">
                 <div class="rounded-b-xl">
                   <div class="hidden" id="headerThree">
@@ -406,14 +416,17 @@
     <section class="px-5 ">
       <div class="container mx-auto lg:py-16 rounded-xl">
         <div class="shadow-smallest rounded-xl" x-data="{ tab: 'preview5' }">
-          <div class="flex w-full p-4 bg-white border border-blueGray-200 dark:border-blueGray-800 text-blueGray-500 dark:bg-blueGray-800 rounded-t-xl">
+          <div
+            class="flex w-full p-4 bg-white border border-blueGray-200 dark:border-blueGray-800 text-blueGray-500 dark:bg-blueGray-800 rounded-t-xl">
 
-            <button :class="{ 'active font-bold dark:bg-blueGray-600 bg-blueGray-200 text-blueGray-500 dark:text-blueGray-300': tab === 'preview5' }"
+            <button
+              :class="{ 'active font-bold dark:bg-blueGray-600 bg-blueGray-200 text-blueGray-500 dark:text-blueGray-300': tab === 'preview5' }"
               class="inline-flex items-center justify-center w-full px-4 py-1 my-2 mt-2 mr-2 text-center transition duration-500 ease-in-out transform rounded-lg cursor-pointer font-lg focus:outline-none lg:w-auto active focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2 text-blueGray-500"
               @click="tab = 'preview5'">
               Preview
             </button>
-            <button :class="{ 'active font-bold dark:bg-blueGray-600 bg-blueGray-200 text-blueGray-500 dark:text-blueGray-300': tab === 'code5' }"
+            <button
+              :class="{ 'active font-bold dark:bg-blueGray-600 bg-blueGray-200 text-blueGray-500 dark:text-blueGray-300': tab === 'code5' }"
               class="inline-flex items-center justify-center w-full px-4 py-1 my-2 mt-2 mr-2 text-center transition duration-500 ease-in-out transform border border-transparent rounded-lg cursor-pointer text-blueGray-500 font-lg focus:outline-none lg:w-auto focus:shadow-outline focus:ring-2 hover:border-blueGray-300 dark:hover:border-blueGray-800 ring-offset-current ring-offset-2"
               @click="tab = 'code5'">
               Code
@@ -432,13 +445,14 @@
               </svg>
             </button>
           </div>
-           <div class="lg:h-screen">
-            <div class="border border-t-0 border-blueGray-200 rounded-b-xl dark:border-blueGray-800" x-show="tab === 'preview5'">
+          <div class="lg:h-screen">
+            <div class="border border-t-0 border-blueGray-200 rounded-b-xl dark:border-blueGray-800"
+              x-show="tab === 'preview5'">
               <iframe class="w-full h-screen rounded-b-xl" src="./tailwindBrightSections/headers-right/header-5.html"
                 title="wicked"></iframe>
             </div>
             <div class=" rounded-b-xl" x-show="tab === 'code5'">
-               <div
+              <div
                 class="h-screen overflow-auto overflow-y-scroll bg-blueGray-900 text-blueGray-200 rounded-b-xl code-tab">
                 <div class="rounded-b-xl">
                   <div class="hidden" id="headerFive">
@@ -590,14 +604,17 @@
     <section class="px-5 ">
       <div class="container mx-auto lg:py-16 rounded-xl">
         <div class="shadow-smallest rounded-xl" x-data="{ tab: 'preview7' }">
-          <div class="flex w-full p-4 bg-white border border-blueGray-200 dark:border-blueGray-800 text-blueGray-500 dark:bg-blueGray-800 rounded-t-xl">
+          <div
+            class="flex w-full p-4 bg-white border border-blueGray-200 dark:border-blueGray-800 text-blueGray-500 dark:bg-blueGray-800 rounded-t-xl">
 
-            <button :class="{ 'active font-bold dark:bg-blueGray-600 bg-blueGray-200 text-blueGray-500 dark:text-blueGray-300': tab === 'preview7' }"
+            <button
+              :class="{ 'active font-bold dark:bg-blueGray-600 bg-blueGray-200 text-blueGray-500 dark:text-blueGray-300': tab === 'preview7' }"
               class="inline-flex items-center justify-center w-full px-4 py-1 my-2 mt-2 mr-2 text-center transition duration-500 ease-in-out transform rounded-lg cursor-pointer font-lg focus:outline-none lg:w-auto active focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2 text-blueGray-500"
               @click="tab = 'preview7'">
               Preview
             </button>
-            <button :class="{ 'active font-bold dark:bg-blueGray-600 bg-blueGray-200 text-blueGray-500 dark:text-blueGray-300': tab === 'code7' }"
+            <button
+              :class="{ 'active font-bold dark:bg-blueGray-600 bg-blueGray-200 text-blueGray-500 dark:text-blueGray-300': tab === 'code7' }"
               class="inline-flex items-center justify-center w-full px-4 py-1 my-2 mt-2 mr-2 text-center transition duration-500 ease-in-out transform border border-transparent rounded-lg cursor-pointer text-blueGray-500 font-lg focus:outline-none lg:w-auto focus:shadow-outline focus:ring-2 hover:border-blueGray-300 dark:hover:border-blueGray-800 ring-offset-current ring-offset-2"
               @click="tab = 'code7'">
               Code
@@ -616,13 +633,14 @@
               </svg>
             </button>
           </div>
-           <div class="lg:h-screen">
-            <div class="border border-t-0 border-blueGray-200 rounded-b-xl dark:border-blueGray-800" x-show="tab === 'preview7'">
+          <div class="lg:h-screen">
+            <div class="border border-t-0 border-blueGray-200 rounded-b-xl dark:border-blueGray-800"
+              x-show="tab === 'preview7'">
               <iframe class="w-full h-screen rounded-b-xl" src="./tailwindBrightSections/headers-right/header-7.html"
                 title="wicked"></iframe>
             </div>
             <div class=" rounded-b-xl" x-show="tab === 'code7'">
-               <div
+              <div
                 class="h-screen overflow-auto overflow-y-scroll bg-blueGray-900 text-blueGray-200 rounded-b-xl code-tab">
                 <div class="rounded-b-xl">
                   <div class="hidden" id="headerSeven">
@@ -717,14 +735,17 @@
     <section class="px-5 ">
       <div class="container mx-auto lg:py-16 rounded-xl">
         <div class="shadow-smallest rounded-xl" x-data="{ tab: 'preview8' }">
-          <div class="flex w-full p-4 bg-white border border-blueGray-200 dark:border-blueGray-800 text-blueGray-500 dark:bg-blueGray-800 rounded-t-xl">
+          <div
+            class="flex w-full p-4 bg-white border border-blueGray-200 dark:border-blueGray-800 text-blueGray-500 dark:bg-blueGray-800 rounded-t-xl">
 
-            <button :class="{ 'active font-bold dark:bg-blueGray-600 bg-blueGray-200 text-blueGray-500 dark:text-blueGray-300': tab === 'preview8' }"
+            <button
+              :class="{ 'active font-bold dark:bg-blueGray-600 bg-blueGray-200 text-blueGray-500 dark:text-blueGray-300': tab === 'preview8' }"
               class="inline-flex items-center justify-center w-full px-4 py-1 my-2 mt-2 mr-2 text-center transition duration-500 ease-in-out transform rounded-lg cursor-pointer font-lg focus:outline-none lg:w-auto active focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2 text-blueGray-500"
               @click="tab = 'preview8'">
               Preview
             </button>
-            <button :class="{ 'active font-bold dark:bg-blueGray-600 bg-blueGray-200 text-blueGray-500 dark:text-blueGray-300': tab === 'code8' }"
+            <button
+              :class="{ 'active font-bold dark:bg-blueGray-600 bg-blueGray-200 text-blueGray-500 dark:text-blueGray-300': tab === 'code8' }"
               class="inline-flex items-center justify-center w-full px-4 py-1 my-2 mt-2 mr-2 text-center transition duration-500 ease-in-out transform border border-transparent rounded-lg cursor-pointer text-blueGray-500 font-lg focus:outline-none lg:w-auto focus:shadow-outline focus:ring-2 hover:border-blueGray-300 dark:hover:border-blueGray-800 ring-offset-current ring-offset-2"
               @click="tab = 'code8'">
               Code
@@ -743,13 +764,14 @@
               </svg>
             </button>
           </div>
-           <div class="lg:h-screen">
-            <div class="border border-t-0 border-blueGray-200 rounded-b-xl dark:border-blueGray-800" x-show="tab === 'preview8'">
+          <div class="lg:h-screen">
+            <div class="border border-t-0 border-blueGray-200 rounded-b-xl dark:border-blueGray-800"
+              x-show="tab === 'preview8'">
               <iframe class="w-full h-screen rounded-b-xl" src="./tailwindBrightSections/headers-right/header-8.html"
                 title="wicked"></iframe>
             </div>
             <div class=" rounded-b-xl" x-show="tab === 'code8'">
-               <div
+              <div
                 class="h-screen overflow-auto overflow-y-scroll bg-blueGray-900 text-blueGray-200 rounded-b-xl code-tab">
                 <div class="rounded-b-xl">
                   <div class="hidden" id="headerEight">
@@ -922,14 +944,17 @@
     <section class="px-5 ">
       <div class="container mx-auto lg:py-16 rounded-xl">
         <div class="shadow-smallest rounded-xl" x-data="{ tab: 'preview10' }">
-          <div class="flex w-full p-4 bg-white border border-blueGray-200 dark:border-blueGray-800 text-blueGray-500 dark:bg-blueGray-800 rounded-t-xl">
+          <div
+            class="flex w-full p-4 bg-white border border-blueGray-200 dark:border-blueGray-800 text-blueGray-500 dark:bg-blueGray-800 rounded-t-xl">
 
-            <button :class="{ 'active font-bold dark:bg-blueGray-600 bg-blueGray-200 text-blueGray-500 dark:text-blueGray-300': tab === 'preview10' }"
+            <button
+              :class="{ 'active font-bold dark:bg-blueGray-600 bg-blueGray-200 text-blueGray-500 dark:text-blueGray-300': tab === 'preview10' }"
               class="inline-flex items-center justify-center w-full px-4 py-1 my-2 mt-2 mr-2 text-center transition duration-500 ease-in-out transform rounded-lg cursor-pointer font-lg focus:outline-none lg:w-auto active focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2 text-blueGray-500"
               @click="tab = 'preview10'">
               Preview
             </button>
-            <button :class="{ 'active font-bold dark:bg-blueGray-600 bg-blueGray-200 text-blueGray-500 dark:text-blueGray-300': tab === 'code10' }"
+            <button
+              :class="{ 'active font-bold dark:bg-blueGray-600 bg-blueGray-200 text-blueGray-500 dark:text-blueGray-300': tab === 'code10' }"
               class="inline-flex items-center justify-center w-full px-4 py-1 my-2 mt-2 mr-2 text-center transition duration-500 ease-in-out transform border border-transparent rounded-lg cursor-pointer text-blueGray-500 font-lg focus:outline-none lg:w-auto focus:shadow-outline focus:ring-2 hover:border-blueGray-300 dark:hover:border-blueGray-800 ring-offset-current ring-offset-2"
               @click="tab = 'code10'">
               Code
@@ -948,13 +973,14 @@
               </svg>
             </button>
           </div>
-           <div class="lg:h-screen">
-            <div class="border border-t-0 border-blueGray-200 rounded-b-xl dark:border-blueGray-800" x-show="tab === 'preview10'">
+          <div class="lg:h-screen">
+            <div class="border border-t-0 border-blueGray-200 rounded-b-xl dark:border-blueGray-800"
+              x-show="tab === 'preview10'">
               <iframe class="w-full h-screen rounded-b-xl" src="./tailwindBrightSections/headers-right/header-10.html"
                 title="wicked"></iframe>
             </div>
             <div class=" rounded-b-xl" x-show="tab === 'code10'">
-               <div
+              <div
                 class="h-screen overflow-auto overflow-y-scroll bg-blueGray-900 text-blueGray-200 rounded-b-xl code-tab">
                 <div class="rounded-b-xl">
                   <div class="hidden" id="headerTen">
@@ -1045,14 +1071,17 @@
     <section class="px-5 ">
       <div class="container mx-auto lg:py-16 rounded-xl">
         <div class="shadow-smallest rounded-xl" x-data="{ tab: 'preview11' }">
-          <div class="flex w-full p-4 bg-white border border-blueGray-200 dark:border-blueGray-800 text-blueGray-500 dark:bg-blueGray-800 rounded-t-xl">
+          <div
+            class="flex w-full p-4 bg-white border border-blueGray-200 dark:border-blueGray-800 text-blueGray-500 dark:bg-blueGray-800 rounded-t-xl">
 
-            <button :class="{ 'active font-bold dark:bg-blueGray-600 bg-blueGray-200 text-blueGray-500 dark:text-blueGray-300': tab === 'preview11' }"
+            <button
+              :class="{ 'active font-bold dark:bg-blueGray-600 bg-blueGray-200 text-blueGray-500 dark:text-blueGray-300': tab === 'preview11' }"
               class="inline-flex items-center justify-center w-full px-4 py-1 my-2 mt-2 mr-2 text-center transition duration-500 ease-in-out transform rounded-lg cursor-pointer font-lg focus:outline-none lg:w-auto active focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2 text-blueGray-500"
               @click="tab = 'preview11'">
               Preview
             </button>
-            <button :class="{ 'active font-bold dark:bg-blueGray-600 bg-blueGray-200 text-blueGray-500 dark:text-blueGray-300': tab === 'code11' }"
+            <button
+              :class="{ 'active font-bold dark:bg-blueGray-600 bg-blueGray-200 text-blueGray-500 dark:text-blueGray-300': tab === 'code11' }"
               class="inline-flex items-center justify-center w-full px-4 py-1 my-2 mt-2 mr-2 text-center transition duration-500 ease-in-out transform border border-transparent rounded-lg cursor-pointer text-blueGray-500 font-lg focus:outline-none lg:w-auto focus:shadow-outline focus:ring-2 hover:border-blueGray-300 dark:hover:border-blueGray-800 ring-offset-current ring-offset-2"
               @click="tab = 'code11'">
               Code
@@ -1071,13 +1100,14 @@
               </svg>
             </button>
           </div>
-           <div class="lg:h-screen">
-            <div class="border border-t-0 border-blueGray-200 rounded-b-xl dark:border-blueGray-800" x-show="tab === 'preview11'">
+          <div class="lg:h-screen">
+            <div class="border border-t-0 border-blueGray-200 rounded-b-xl dark:border-blueGray-800"
+              x-show="tab === 'preview11'">
               <iframe class="w-full h-screen rounded-b-xl" src="./tailwindBrightSections/headers-right/header-11.html"
                 title="wicked"></iframe>
             </div>
             <div class=" rounded-b-xl" x-show="tab === 'code11'">
-               <div
+              <div
                 class="h-screen overflow-auto overflow-y-scroll bg-blueGray-900 text-blueGray-200 rounded-b-xl code-tab">
                 <div class="rounded-b-xl">
                   <div class="hidden" id="headerEleven">
@@ -1287,17 +1317,20 @@
       </div>
     </section>
     <!--- header 12 -->
-  <section class="px-5 ">
-    <div class="container mx-auto lg:py-16 rounded-xl">
-      <div class="shadow-smallest rounded-xl" x-data="{ tab: 'preview12' }">
-          <div class="flex w-full p-4 bg-white border border-blueGray-200 dark:border-blueGray-800 text-blueGray-500 dark:bg-blueGray-800 rounded-t-xl">
+    <section class="px-5 ">
+      <div class="container mx-auto lg:py-16 rounded-xl">
+        <div class="shadow-smallest rounded-xl" x-data="{ tab: 'preview12' }">
+          <div
+            class="flex w-full p-4 bg-white border border-blueGray-200 dark:border-blueGray-800 text-blueGray-500 dark:bg-blueGray-800 rounded-t-xl">
 
-            <button :class="{ 'active font-bold dark:bg-blueGray-600 bg-blueGray-200 text-blueGray-500 dark:text-blueGray-300': tab === 'preview12' }"
+            <button
+              :class="{ 'active font-bold dark:bg-blueGray-600 bg-blueGray-200 text-blueGray-500 dark:text-blueGray-300': tab === 'preview12' }"
               class="inline-flex items-center justify-center w-full px-4 py-1 my-2 mt-2 mr-2 text-center transition duration-500 ease-in-out transform rounded-lg cursor-pointer font-lg focus:outline-none lg:w-auto active focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2 text-blueGray-500"
               @click="tab = 'preview12'">
               Preview
             </button>
-            <button :class="{ 'active font-bold dark:bg-blueGray-600 bg-blueGray-200 text-blueGray-500 dark:text-blueGray-300': tab === 'code12' }"
+            <button
+              :class="{ 'active font-bold dark:bg-blueGray-600 bg-blueGray-200 text-blueGray-500 dark:text-blueGray-300': tab === 'code12' }"
               class="inline-flex items-center justify-center w-full px-4 py-1 my-2 mt-2 mr-2 text-center transition duration-500 ease-in-out transform border border-transparent rounded-lg cursor-pointer text-blueGray-500 font-lg focus:outline-none lg:w-auto focus:shadow-outline focus:ring-2 hover:border-blueGray-300 dark:hover:border-blueGray-800 ring-offset-current ring-offset-2"
               @click="tab = 'code12'">
               Code
@@ -1317,12 +1350,13 @@
             </button>
           </div>
           <div class="lg:h-screen">
-            <div class="border border-t-0 border-blueGray-200 rounded-b-xl dark:border-blueGray-800" x-show="tab === 'preview12'">
+            <div class="border border-t-0 border-blueGray-200 rounded-b-xl dark:border-blueGray-800"
+              x-show="tab === 'preview12'">
               <iframe class="w-full h-screen rounded-b-xl" src="./tailwindBrightSections/headers-right/header-12.html"
                 title="wicked"></iframe>
             </div>
             <div class="rounded-b-xl" x-show="tab === 'code12'">
-               <div
+              <div
                 class="h-screen overflow-auto overflow-y-scroll bg-blueGray-900 text-blueGray-200 rounded-b-xl code-tab">
                 <div class="rounded-b-xl">
                   <div class="hidden" id="headerTwelve">
@@ -1465,8 +1499,8 @@
             href="https://www.producthunt.com/posts/wickedblocks?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-wickedblocks"
             target="_blank"><img
               src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=281332&theme=dark&period=daily"
-              alt="WickedBlocks - Tailwind V2 blocks ready to copy paste | Product Hunt" style="width: 250px; height: 54px;"
-              width="250" height="54" /></a>
+              alt="WickedBlocks - Tailwind V2 blocks ready to copy paste | Product Hunt"
+              style="width: 250px; height: 54px;" width="250" height="54" /></a>
         </div>
       </div>
     </footer>
@@ -1511,6 +1545,13 @@
         };
       }
     </script>
+    <a href="http://wickedtemplates.com/?ref=caf" target="_blank" class="fixed bottom-0 right-0 z-10 m-2 rounded-full">
 
+      <div class="items-center justify-start hidden font-medium text-gray-900 lg:flex w-52 title-font">
+        <img class="object-cover object-center rounded-full bg-blue-1300" alt="badge"
+          src="https://www.colorsandfonts.com/WickedTemplates.svg">
+      </div>
+    </a>
   </body>
+
 </html>
